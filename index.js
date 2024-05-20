@@ -19,7 +19,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:storybook/recommended',
     'plugin:jsdoc/recommended',
-    'plugin:sonarjs/recommended',
+    'plugin:sonarjs/recommended-legacy',
   ],
   rules: {
     // sonarjs rules
