@@ -153,7 +153,9 @@ module.exports = {
           jsx: true,
         },
         tsconfigRootDir: __dirname,
-        EXPERIMENTAL_useProjectService: true,
+        EXPERIMENTAL_useProjectService: {
+          maximumDefaultProjectFileMatchCount_THIS_WILL_SLOW_DOWN_LINTING: 20,
+        },
         // project: true,
       },
       rules: {
