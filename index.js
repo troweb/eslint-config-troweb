@@ -14,7 +14,7 @@ module.exports = {
     sourceType: 'module',
     ecmaVersion: 2022,
   },
-  plugins: ['prefer-arrow', 'unicorn', 'import', 'jsdoc', 'sonarjs', 'mui-path-imports'],
+  plugins: ['prefer-arrow', 'unicorn', 'import', 'jsdoc', 'sonarjs'],
   extends: [
     'plugin:prettier/recommended',
     'plugin:storybook/recommended',
@@ -59,8 +59,6 @@ module.exports = {
     'no-unused-expressions': ['error', { allowTaggedTemplates: true }],
     'no-shadow': 'off',
     'no-new-func': 'error',
-    'mui-path-imports/mui-path-imports': 'error',
-    'no-restricted-imports': ['error', '@mui/material'],
     'spaced-comment': 'error',
 
     // disabled eslint rules
@@ -188,7 +186,6 @@ module.exports = {
           'error',
           {
             paths: [
-              { name: '@mui/material' },
               {
                 name: '@apollo/client',
                 importNames: ['gql'],
